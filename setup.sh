@@ -13,12 +13,12 @@ chmod 777 moodledata
 rm -f workspace/*
 cd workspace
 git clone git@github.com:moodle/moodle.git moodle
+cd moodle
 git branch --track MOODLE_31_STABLE origin/MOODLE_31_STABLE
 git checkout MOODLE_31_STABLE
 
 #make moodle config 
-cp /home/ubuntu/cloud9/config.php /home/ubuntu/workspace/moodle/config.php
-cd /home/ubuntu/workspace/moodle
+cp /home/ubuntu/cloud9/config.php config.php
 sed -i 's/@@USERNAME@@/$1/g' config.php
 sed -i 's/@@WORKSPACE@@/$2/g' config.php
 
