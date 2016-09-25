@@ -18,6 +18,7 @@ git checkout MOODLE_31_STABLE
 
 #make moodle config 
 cp /home/ubuntu/cloud9/config.php /home/ubuntu/workspace/moodle/config.php
+cd /home/ubuntu/workspace/moodle
 sed -i 's/@@USERNAME@@/$1/g' config.php
 sed -i 's/@@WORKSPACE@@/$2/g' config.php
 
