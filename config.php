@@ -78,7 +78,7 @@ $CFG->dboptions = array(
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot   = 'https://@@WORKSPACE@@-@@USERNAME@@.c9users.io';
+$CFG->wwwroot   = 'https://@@WORKSPACE@@-@@USERNAME@@.c9users.io/moodle';
 //=========================================================================
 // 3. DATA FILES LOCATION
 //=========================================================================
