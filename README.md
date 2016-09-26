@@ -13,5 +13,6 @@ Instructions
 5. When prompted for your username, enter it
 6. When prompted for your workspace name, enter it
 7. When its finished running, click the "Run Project" button at top
-8. Navigate to the URL that the setup script finished with.
-9. Happy Moodle Coding!
+8. Navigate to the URL that the setup script finished with, and finish the install
+9. Remove setup.sh and config.php from the workspace directory. 
+10. Happy Moodle Coding!
