@@ -3,7 +3,7 @@
 # Author: poodll
 
 #edit this if this setup.sh script is in a diff location
-SETUPDIR = ~/workspace
+SETUPDIR=~/workspace
 
 #make Moodle data dir
 echo "Making Moodle data directory .."
