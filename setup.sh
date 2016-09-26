@@ -2,29 +2,36 @@
 # Shell script to clone everything into Moodle
 # Author: poodll
 
-# start from home directory
-cd /home/ubuntu
+#edit this if this setup.sh script is in a diff location
+SETUPDIR = ~/workspace
 
 #make Moodle data dir
-mkdir moodledata
-chmod 777 moodledata
+echo "Making Moodle data directory .."
+mkdir ~/moodledata
+chmod 777 ~/moodledata
 
 #make moodle program directory
-rm -f workspace/*
-cd workspace
+echo "cloning Moodle from git .."
+cd ~/workspace
 git clone git@github.com:moodle/moodle.git moodle
 cd moodle
 git branch --track MOODLE_31_STABLE origin/MOODLE_31_STABLE
 git checkout MOODLE_31_STABLE
 
 #make moodle config 
-cp /home/ubuntu/cloud9/config.php config.php
-sed -i 's/@@USERNAME@@/$1/g' config.php
-sed -i 's/@@WORKSPACE@@/$2/g' config.php
+echo "Making Moodle config file.."
+cp ${SETUPDIR}/config.php config.php
+echo "Enter your Cloud9 username .."
+read cloud9_username
+echo "Enter your Cloud9 workspace name .."
+read cloud9_workspace
+
+sed -i "s/@@USERNAME@@/$cloud9_username/g" config.php
+sed -i "s/@@WORKSPACE@@/$cloud9_workspace/g" config.php
 
 #start database
 mysql-ctl start
 
-#perform installation
-php /home/ubuntu/workspace/moodle/admin/cli/install.php
+echo "all done. Now 'run' the project and navigate to https://$cloud9_workspace-$cloud9_username.c9users.io/moodle to complete the installation"
+
 
