@@ -7,7 +7,7 @@ Instructions
 2. Make a note of your username ... we are going to need that.
 3. From the new account make a new workspace (note the workspace name, we'll need that too)
   * Workspace Type: "Hosted workspace"
-  * Clone from Git URL: "git@github.com:justinhunt/moodle-cloud9.git"
+  * Clone from Git URL: "https://github.com/justinhunt/moodle-cloud9.git"
   * Template: "PHP,Apache .."
 4. From the bash window of the new workspace, type ./setup.sh
 5. When prompted for your username, enter it

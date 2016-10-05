@@ -13,7 +13,7 @@ chmod 777 ~/moodledata
 #make moodle program directory
 echo "cloning Moodle from git .."
 cd ~/workspace
-git clone git@github.com:moodle/moodle.git moodle
+git clone https://github.com/moodle/moodle.git moodle
 cd moodle
 git branch --track MOODLE_31_STABLE origin/MOODLE_31_STABLE
 git checkout MOODLE_31_STABLE
