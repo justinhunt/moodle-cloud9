@@ -18,6 +18,10 @@ cd moodle
 git branch --track MOODLE_31_STABLE origin/MOODLE_31_STABLE
 git checkout MOODLE_31_STABLE
 
+#need php5-curl
+sudo apt-get update
+sudo apt-get install php5-curl
+
 #make moodle config 
 echo "Making Moodle config file.."
 cp ${SETUPDIR}/config.php config.php

@@ -10,8 +10,9 @@ Instructions
   * Clone from Git URL: "git@github.com:justinhunt/moodle-cloud9.git"
   * Template: "PHP,Apache .."
 4. From the bash window of the new workspace, type ./setup.sh
-5. When prompted for your username, enter it
-6. When prompted for your workspace name, enter it
-7. When its finished running, click the "Run Project" button at top
-8. Navigate to the URL that the setup script finished with.
-9. Happy Moodle Coding!
+5. If prompted to approve installing php5-curl, accept by typing 'Y'
+6. When prompted for your username, enter it
+7. When prompted for your workspace name, enter it
+8. When its finished running, click the "Run Project" button at top
+9. Navigate to the URL that the setup script finished with.
+10. Happy Moodle Coding!
