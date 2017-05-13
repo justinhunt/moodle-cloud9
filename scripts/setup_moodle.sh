@@ -20,18 +20,7 @@ git checkout MOODLE_32_STABLE
 
 #need php curl
 sudo apt-get update
-sudo apt-get install php-curl
-
-#make moodle config 
-echo "Making Moodle config file.."
-cp ${SETUPDIR}/config.php config.php
-echo "Enter your Cloud9 username .."
-read cloud9_username
-echo "Enter your Cloud9 workspace name .."
-read cloud9_workspace
-
-sed -i "s/@@USERNAME@@/$cloud9_username/g" config.php
-sed -i "s/@@WORKSPACE@@/$cloud9_workspace/g" config.php
+sudo apt-get install php-curl -y
 
 #install the skeleton tool for making a new plugin
 echo "Now lets install the skeleton tool"
@@ -39,6 +28,7 @@ git clone https://github.com/mudrd8mz/moodle-tool_pluginskel.git ${SETUPDIR}/moo
 echo "done (installing skeleton tool)"
 
 #Setup the Node js and Grunt environment
+echo "setting up Node and Grunt (takes a while)"
 cd  ${SETUPDIR}/moodle
 npm install
 npm install -g grunt-cli
@@ -53,6 +43,17 @@ echo "Now lets install phpmyadmin"
 phpmyadmin-ctl install
 echo "done (installing phpmyadmin)"
 
+#make moodle config 
+echo "Making Moodle config file.."
+cp ${SETUPDIR}/config.php ${SETUPDIR}/moodle/config.php
+echo "Enter your Cloud9 username .."
+read cloud9_username
+echo "Enter your Cloud9 workspace name .."
+read cloud9_workspace
+
+cd  ${SETUPDIR}/moodle
+sed -i "s/@@USERNAME@@/$cloud9_username/g" config.php
+sed -i "s/@@WORKSPACE@@/$cloud9_workspace/g" config.php
 
 echo "all done. Now 'run' the project and navigate to https://$cloud9_workspace-$cloud9_username.c9users.io/moodle to complete the installation"
 

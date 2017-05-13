@@ -18,10 +18,10 @@ echo "backing up envvars"
 sudo cp /etc/apache2/envvars.bak /etc/apache2/envvars
 
 echo "install PHP7 XML-RPC"
-sudo apt-get install php7.0-xmlrpc
+sudo apt-get install php7.0-xmlrpc -y
 
 echo "install xdebug"
-sudo apt-get install php-xdebug
+sudo apt-get install php-xdebug -y
 sudo echo "xdebug.remote_enable=1" >> /etc/php/7.0/mods-available/xdebug.ini  
 
 

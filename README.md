@@ -16,5 +16,5 @@ This will upgrade PHP to PHP 7 and install necessary dependencies. Then it will 
 7. When prompted for your workspace name, enter it
 8. When its finished running, click the "Run Project" button at top
 9. Navigate to the URL that the setup script finished with, and finish the install
-10. Remove setup.sh and config.php from the workspace directory. 
+10. Remove "setup.sh" and "config.php" and "scripts" directory from the workspace directory. 
 11. Happy Moodle Coding!
