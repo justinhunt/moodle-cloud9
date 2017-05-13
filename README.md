@@ -10,7 +10,8 @@ Instructions
   * Clone from Git URL: "https://github.com/justinhunt/moodle-cloud9.git"
   * Template: "PHP,Apache .."
 4. From the bash window of the new workspace, type ./setup.sh
-5. If prompted to approve installing php5-curl, accept by typing 'Y'
+This will upgrade PHP to PHP 7 and install necessary dependencies. Then it will install Moodle.
+5. If prompted to approve installing php curl, accept by typing 'Y'
 6. When prompted for your username, enter it
 7. When prompted for your workspace name, enter it
 8. When its finished running, click the "Run Project" button at top
