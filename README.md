@@ -11,10 +11,9 @@ Instructions
   * Template: "PHP,Apache .."
 4. From the bash window of the new workspace, type ./setup.sh
 This will upgrade PHP to PHP 7 and install necessary dependencies. Then it will install Moodle.
-5. If prompted to approve installing php curl, accept by typing 'Y'
-6. When prompted for your username, enter it
-7. When prompted for your workspace name, enter it
-8. When its finished running, click the "Run Project" button at top
-9. Navigate to the URL that the setup script finished with, and finish the install
-10. Remove "setup.sh" and "config.php" and "scripts" directory from the workspace directory. 
-11. Happy Moodle Coding!
+5. When prompted for your username, enter it
+6. When prompted for your workspace name, enter it
+7. When its finished running, click the "Run Project" button at top
+8. Navigate to the URL that the setup script finished with, and finish the install
+9. Remove "setup.sh" and "config.php" and "scripts" directory from the workspace directory. 
+10. Happy Moodle Coding!
