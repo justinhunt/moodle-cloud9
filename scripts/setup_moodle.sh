@@ -55,6 +55,9 @@ cd  ${SETUPDIR}/moodle
 sed -i "s/@@USERNAME@@/$cloud9_username/g" config.php
 sed -i "s/@@WORKSPACE@@/$cloud9_workspace/g" config.php
 
+#echo "changing format of mysql to mysqlutf8"
+#php admin/cli/mysql_collation.php --collation=utf8mb4_unicode_ci
+
 echo "all done. Now 'run' the project and navigate to https://$cloud9_workspace-$cloud9_username.c9users.io/moodle to complete the installation"
 
 
