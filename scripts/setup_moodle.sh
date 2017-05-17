@@ -15,8 +15,8 @@ echo "cloning Moodle from git .."
 cd ~/workspace
 git clone https://github.com/moodle/moodle.git moodle
 cd moodle
-git branch --track MOODLE_32_STABLE origin/MOODLE_32_STABLE
-git checkout MOODLE_32_STABLE
+git branch --track MOODLE_33_STABLE origin/MOODLE_33_STABLE
+git checkout MOODLE_33_STABLE
 
 #need php curl
 sudo apt-get update
@@ -56,7 +56,7 @@ sed -i "s/@@USERNAME@@/$cloud9_username/g" config.php
 sed -i "s/@@WORKSPACE@@/$cloud9_workspace/g" config.php
 
 #echo "changing format of mysql to mysqlutf8"
-#php admin/cli/mysql_collation.php --collation=utf8mb4_unicode_ci
+php admin/cli/mysql_collation.php --collation=utf8mb4_unicode_ci
 
 echo "all done. Now 'run' the project and navigate to https://$cloud9_workspace-$cloud9_username.c9users.io/moodle to complete the installation"
 
