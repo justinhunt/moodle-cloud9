@@ -15,8 +15,8 @@ echo "cloning Moodle from git .."
 cd ~/workspace
 git clone https://github.com/moodle/moodle.git moodle
 cd moodle
-git branch --track MOODLE_33_STABLE origin/MOODLE_33_STABLE
-git checkout MOODLE_33_STABLE
+git branch --track MOODLE_35_STABLE origin/MOODLE_35_STABLE
+git checkout MOODLE_35_STABLE
 
 #need php curl
 sudo apt-get update

@@ -1,11 +1,11 @@
 # moodle-cloud9
-A script(s) to use for setting up a Moodle development environment on Cloud9 ( https://c9.io ) 
+A script(s) to use for setting up a Moodle development environment on Cloud9 ( https://c9.io ) with Moodle 3.5
 
 Instructions
 ===
 1. Setup an account on https://c9.io (free account is ok)
 2. Make a note of your username ... we are going to need that.
-3. From the new account make a new workspace (note the workspace name, we'll need that too)
+3. From the new account make a new workspace (note the workspace name, we'll need that too. just alphanumerics and hyphens please. no underscores)
   * Workspace Type: "Hosted workspace"
   * Clone from Git URL: "https://github.com/justinhunt/moodle-cloud9.git"
   * Template: "PHP,Apache .."
