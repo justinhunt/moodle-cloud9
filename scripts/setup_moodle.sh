@@ -30,6 +30,7 @@ echo "done (installing skeleton tool)"
 #Setup the Node js and Grunt environment
 echo "setting up Node and Grunt (takes a while)"
 cd  ${SETUPDIR}/moodle
+nvm install 8.12.0
 npm install
 npm install -g grunt-cli
 
